@@ -14,7 +14,7 @@ export const Sugest = () => {
   
   
   function getData() {
-    axios.get('http://127.0.0.1:5000/api/v1/predictions/'+ itemId)
+    axios.get('https://flask-c335.onrender.com/api/v1/predictions/'+ itemId)
       .then(res => {
         const newData = res.data.map(item => item.id);
         setData(newData);
